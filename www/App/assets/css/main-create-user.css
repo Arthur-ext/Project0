@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+html, body {
+    background-color: #1f1010;
+}
+
+.container-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-signup {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 5%;
+    background-color: #6e3652;
+    color: #fff;
+    border: solid 1px gold
+}
+
+.create-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-fields div input {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 0px;
+    border-bottom: solid 2px #c1e4e469;
+    padding-left: 0px;
+    color: #fff;
+}
+
+#title-signup {
+    align-self: center;
+}
+
+.btn-signup {
+    background-color: #e7dfad96;
+    border-radius:0px !important;
+}

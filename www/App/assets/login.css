@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #b6b6e2;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,4 @@
+Criar uma maneira de incluir arquivos de maneira mais semantica. 
+
+SUJESTÂO: 
+pegar o caminho do arquivo, q está sendo utilizado, e a partir dele iniciar o caminho para o arquivo à ser aberto nele.

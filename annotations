@@ -1,0 +1,11 @@
+Project ZERO: 
+-- notations --
+
+-- TABLES  --
+ - users -- PREFIX: us_;
+ - stores -- PREFIX: sr_;
+ - store_types -- PREFIX: st_;
+
+-- OBSERVATIONS --
+ - O email não será obrigatório, porém sem o email, não será possível realizar algumas ações.
+ 
