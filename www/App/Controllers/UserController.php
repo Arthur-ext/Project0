@@ -44,17 +44,20 @@ class UserController extends Controller {
 
                 var_dump($exec);
 
-                // $_SESSION['signupStatus'] = "Conta criada com sucesso";
-                // Auth::loged($_POST['user']);
+                if( $exec === false ) {
+                    throw new \Exception('Nome de Usuario ou senha já existem');
+                }
 
-
-                // $this->redirect('/perfil');
+                $_SESSION['signupStatus'] = "Conta criada com sucesso";
+                Auth::loged($_POST['user']);
+                $this->redirect('/perfil');
             }
             else {
                 throw new \Exception('Erro ao acessar a pagina');
             }
 
         } catch(\Exception $e) {
+            echo $e->getMessage();
             // $_SESSION['signupStatus'] = "Não foi possível criar a conta";
             $_SESSION['signupStatus'] = $e->getMessage();
             
