@@ -1,7 +1,48 @@
 @charset "UTF-8";
 
-.container {
-    background-color: #b6b6e2;
+.container-screem-login {
+    width: 100%;
+    height: 100%;
+    background-color: #979797;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.container-login {
+    background-color: red;
+    padding: 50px;
+    width: 40%;
+    height: 60%;
+
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-login h5 {
+    align-self: center;
+}
+
+.input-login {
+    border: none;
+    border-radius: 0px;
+    border-bottom: solid 2px #04ff04;
+    background-color: transparent;
+}
+
+.btn-login {
+    border-radius: 0px;
+    border: solid 1px black;
+    background-color: #04ff04;
+}
+
+.notify-error {
+    background-color: #979797;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 2em;
+    align-self: center;
 }
