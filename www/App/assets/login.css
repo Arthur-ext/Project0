@@ -46,3 +46,8 @@
     margin-top: 2em;
     align-self: center;
 }
+
+.link-signup {
+    align-self: center;
+    color: rgb(255, 251, 0);
+}

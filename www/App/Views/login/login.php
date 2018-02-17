@@ -21,6 +21,8 @@
                 </div>
                 
                 <button class="btn btn-login" type="submit">ENTRAR</button>
+                
+                <a class="link-signup" href="/criar-conta">Cadastrar</a>
 
                 <div class="notify-error">
                     <span>
