@@ -42,7 +42,7 @@ class UserController extends Controller {
                 $user = new Users(Conn::getDB());
                 $exec = $user->insert($_POST['user'], $_POST['email'], $_POST['pass']);
 
-                var_dump($exec);
+                // var_dump($exec);
 
                 if( $exec === false ) {
                     throw new \Exception('Nome de Usuario ou senha já existem');
@@ -53,11 +53,10 @@ class UserController extends Controller {
                 $this->redirect('/perfil');
             }
             else {
-                throw new \Exception('Erro ao acessar a pagina');
+                throw new \Exception('Erro ao criar a conta');
             }
 
         } catch(\Exception $e) {
-            echo $e->getMessage();
             // $_SESSION['signupStatus'] = "Não foi possível criar a conta";
             $_SESSION['signupStatus'] = $e->getMessage();
             
