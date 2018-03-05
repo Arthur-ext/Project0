@@ -21,6 +21,11 @@ class UserController extends Controller {
     public function profileUser() {
         Auth::auth();
         $this->view->titlePage = "Seu perfil";
+
+        $this->view->allUsers = $this->viewUsers();
+
+
+
         $this->render('user/userProfile');
     }
 
@@ -63,5 +68,18 @@ class UserController extends Controller {
             $this->redirect('/criar-conta');
             
         }
+    }
+
+    public function viewUsers() {
+        $user = new Users(Conn::getDB());
+        return $result = $user->find();
+
+    }
+
+    public function deleteUser() {
+        $user = new Users(Conn::getDB());
+        $user->delete();
+        $this->logoutUser();
+
     }
 }
