@@ -26,6 +26,8 @@ class Router extends Bootstrap {
         $routes['insertUser'] = array( 'route' => '/criando-usuario', 'controller' => 'UserController', 'action' => 'insertUser' );
         $routes['deleteUser'] = array( 'route' => '/delete-user', 'controller' => 'UserController', 'action' => 'deleteUser' );
 
+
+        $routes['teste'] = array( 'route' => '/teste', 'controller' => 'UserController', 'action' => 'teste' );
         $this->setRoutes($routes);
     }
    

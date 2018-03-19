@@ -12,10 +12,15 @@
         <h4 id="title-signup">Cadastro</h4>
 
         <div class="create-fields">
-            
+
+            <div class="form-group">
+                <label for="">Nome:</label>
+                <input class="form-control" type="text" placeholder="Nome..." name="user" required>
+            </div>
+
             <div class="form-group">
                 <label for="">Nome de Usuário:</label>
-                <input class="form-control" type="text" placeholder="Nome de Usuario..." name="user" required>
+                <input class="form-control" type="text" placeholder="Nome de Usuario..." name="username" required>
             </div>
             <div class="form-group">
                 <label for="">Email:</label>
